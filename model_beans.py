@@ -1,24 +1,13 @@
-import pandas as pd
-import seaborn as sns
 from keras.callbacks import EarlyStopping
-from keras.layers import (
-    Conv2D,
-    Dense,
-    Flatten,
-    Input,
-    MaxPool2D,
-)
+from keras.layers import Conv2D, Dense, Flatten, Input, MaxPool2D
 from keras.losses import CategoricalCrossentropy
 from keras.metrics import CategoricalAccuracy
 from keras.models import Sequential
 from keras.optimizers import Adam
-from model_eval.model_eval import plot_model_hist
 
-import tensorflow_datasets as tfds
-
-import tensorflow as tf
-from preprocessing import preprocessing
 from model_eval import model_eval
+from model_eval.model_eval import plot_model_hist
+from preprocessing import preprocessing
 from utils import utils
 
 # %%
